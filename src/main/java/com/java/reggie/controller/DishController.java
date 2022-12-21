@@ -153,7 +153,7 @@ public class DishController {
         redisTemplate.delete(keys);
 
         //清理某个分类下面的菜品缓存数据
-//        String key = "dish_" + dishDto.getCategoryId() + "_1";
+//        String key = "dish_" + dishDto.getCategoryId();
 //        redisTemplate.delete(key);
 
         return R.success("修改菜品成功");
