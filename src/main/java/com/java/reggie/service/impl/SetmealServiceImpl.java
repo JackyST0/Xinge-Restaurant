@@ -81,6 +81,11 @@ public class SetmealServiceImpl extends ServiceImpl<SetmealMapper, Setmeal> impl
         setmealDishService.remove(lambdaQueryWrapper);
     }
 
+    /**
+     * 根据id查询套餐信息和对应菜品的关联数据
+     * @param id
+     * @return
+     */
     public SetmealDto getByIdWithDish(Long id) {
         //查询套餐基本信息，从setmeal表查询
         Setmeal setmeal = this.getById(id);
