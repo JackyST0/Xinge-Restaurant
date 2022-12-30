@@ -34,6 +34,11 @@ public class CommonController {
     @Value("${reggie.path}")
     private String basePath;
 
+    /**
+     * 文件上传
+     * @param file
+     * @return
+     */
     @PostMapping("/upload")
     public R<String> upload(MultipartFile file){
         //file是一个临时文件，需要转存到指定位置，否则本次请求完成后临时文件会删除

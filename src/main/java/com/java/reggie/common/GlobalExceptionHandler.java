@@ -24,7 +24,7 @@ import java.sql.SQLIntegrityConstraintViolationException;
 public class GlobalExceptionHandler {
 
     /**
-     * 异常处理方法
+     * 异常处理方法捕获新增员工时账号重复异常
      * @return
      */
     @ExceptionHandler(SQLIntegrityConstraintViolationException.class)
@@ -39,7 +39,7 @@ public class GlobalExceptionHandler {
     }
 
     /**
-     * 异常处理方法
+     * 异常处理方法捕获删除菜品异常
      * @return
      */
     @ExceptionHandler(CustomException.class)
