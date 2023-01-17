@@ -3,11 +3,11 @@ server:
 spring:
   application:
     #应用名称，可选
-    name: reggie_take_out
+    name: xinge-restaurant
 #  datasource:
 #    druid:
 #      driver-class-name: com.mysql.cj.jdbc.Driver
-#      url: jdbc:mysql://localhost:3306/reggie?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+#      url: jdbc:mysql://localhost:3306/xinge?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
 #      username: root
 #      password: root
   shardingsphere:
@@ -18,14 +18,14 @@ spring:
       master:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://home.i-have-2-cats.xyz:38006/reggie?characterEncoding=utf-8
+        url: jdbc:mysql://home.i-have-2-cats.xyz:38006/xinge?characterEncoding=utf-8
         username: root
         password: 123456
       # 从数据源
       slave:
         type: com.alibaba.druid.pool.DruidDataSource
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://home.i-have-2-cats.xyz:38004/reggie?characterEncoding=utf-8
+        url: jdbc:mysql://home.i-have-2-cats.xyz:38004/xinge?characterEncoding=utf-8
         username: root
         password: root
     masterslave:
@@ -59,5 +59,5 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: ASSIGN_ID
-reggie:
-  path: E:\IntelliJ IDEA 2021.3.2\project\reggie_take_out\img\
+xinge:
+  path: E:\IntelliJ IDEA 2021.3.2\project\xinge-restaurant\img\
