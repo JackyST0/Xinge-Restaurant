@@ -43,9 +43,9 @@ spring:
   main:
     allow-bean-definition-overriding: true
   redis:
-    host: 127.0.0.1
-    port: 6379
-    password:
+    host: home.woem.asia
+    port: 38002
+    password: root
     database: 0
   cache:
     redis:
